@@ -1,6 +1,7 @@
 import webbrowser
 import os
 import re
+from classes.movie import Movie
 
 
 # Styles and scripting for the page
@@ -152,7 +153,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('fresh_tomatoes.html', 'w')
+    output_file = open('index.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
@@ -165,3 +166,13 @@ def open_movies_page(movies):
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
+
+
+movies = []
+
+movie = Movie('Intouchables','desc','https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg','https://www.youtube.com/watch?v=34WIbmXkewU')
+
+movies.append(movie)
+
+open_movies_page(movies)
+
