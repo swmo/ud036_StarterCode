@@ -167,7 +167,9 @@ def open_movies_page(movies):
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
 
-
+"""
+Generate static movies to show on the website
+"""
 movies = []
 
 movie = Movie('Intouchables','https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg','https://www.youtube.com/watch?v=34WIbmXkewU')
