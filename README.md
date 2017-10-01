@@ -1,2 +1,9 @@
-# ud036_StarterCode
-Source code for a Movie Trailer website.
+# ud036_StarterCode - Movie Trailer
+A simple Website which is displaying diffrent Movies. 
+
+#Usage
+
+##Installation
+
+##License
+
