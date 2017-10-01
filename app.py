@@ -2,6 +2,8 @@ import webbrowser
 import os
 import re
 from classes.movie import Movie
+from classes.website import Website
+
 
 
 # Styles and scripting for the page
