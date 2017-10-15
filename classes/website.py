@@ -7,20 +7,25 @@ class Website:
                 This class can be used to genarte and show an html file with movies.
 
                 Attributes:
-                        movies:                 list, of movie objects
-                        output_file_path:       string, default path for the generating html
-                        template_pathes:        array, with the templates pathes
-                        template:               text, section of each templat
+                        movies (array):                 list of movie objects
+                        output_file_path (str):         string, default path for the generating html
+                        template_pathes (array):        list of the templates pathes
+                        template (array):               text section of each template
         """
         
-        def __init__(self,movies,options = []):
-                """Inits the class with the movies """
+        def __init__(self,movies):
+                """Inits the class with the movies"""
+                
 		self.movies = movies
 
                 """set default values of the attributes"""
 	   	self.output_file_path   = "index.html"
-		self.template_pathes    = {"main_page_head": "template/main_page_head.html", "main_page_content" : "template/main_page_content.html", "movie_title_content" : "template/movie_title_content.html"}
-		self.template           = {"main_page_head": "", "main_page_content": "", "movie_title_content":""}
+		self.template_pathes    = {"main_page_head": "template/main_page_head.html",
+                                           "main_page_content" : "template/main_page_content.html",
+                                           "movie_title_content" : "template/movie_title_content.html"}
+		self.template           = {"main_page_head": "",
+                                           "main_page_content": "",
+                                           "movie_title_content":""}
 
 
 	def load_templates(self):
@@ -39,14 +44,16 @@ class Website:
 			trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match else None)
 
 			# Append the tile for the movie with its content filled in
-			content += self.template.get('movie_title_content').format(movie_title=movie.title,poster_image_url=movie.poster_image_url,trailer_youtube_id=trailer_youtube_id)
+			content += self.template.get('movie_title_content').format(movie_title=movie.title,
+                                                                                   poster_image_url=movie.poster_image_url,
+                                                                                   trailer_youtube_id=trailer_youtube_id)
 		
 		return content
 
 	def generate_html(self):
                 """generate the html and save the file"""
 		self.load_templates()
-		main_page_content 	= self.template.get('main_page_content')
+		main_page_content = self.template.get('main_page_content')
 		main_page_head 	= self.template.get('main_page_head')
 
 		rendered_content = main_page_content.format(movie_tiles=self.create_movie_titles_content())
