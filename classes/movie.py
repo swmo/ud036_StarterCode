@@ -1,6 +1,12 @@
 
 class Movie:
-#this Movie Class represent a movie.
+        """     Class represent a movie
+
+                Attributes:
+                    title: Title of the movie
+                    poster_image_url: Url to an Image of the movie
+                    trailer_youtube_url: youtube like to the trailer of the movie
+        """
 
     def __init__(self,title,poster_image_url,trailer_youtube_url):
         #Inits Movie Instance with the minimal informations
