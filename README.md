@@ -1,10 +1,11 @@
 # ud036_StarterCode - Movie Trailer
 A simple Website which is displaying diffrent Movies. 
+create your own movie web application i just a few steps.
 
 # Usage
 
 ## Installation 
-create your own movie web application i just a few steps.
+
 
 clone or download the newest version https://github.com/swmo/ud036_StarterCode/archive/master.zip
 
