@@ -1,5 +1,6 @@
 # ud036_StarterCode - Movie Trailer
 A simple Website which is displaying diffrent Movies. 
+
 create your own movie web application i just a few steps.
 
 # Usage
@@ -30,7 +31,8 @@ movie = Movie('Intouchables',
 movies.append(movie)
 ```
 
-to genearte and show the website you can use the Website Class. It will genearte the website and direct open in your default browser.
+to genearte and show the website you can use the Website Class. 
+It will genearte the website and direct open in your default browser.
 ```
 website = Website(movies)
 website.generate_html()
@@ -45,7 +47,7 @@ Feel free to modify the templates for your needs (the website use bootstrap):
 ## Example
 Take a look at the app.py for an example.
 
-## License
+# License
 
 **MIT License**
 
