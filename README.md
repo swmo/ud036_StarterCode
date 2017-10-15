@@ -21,7 +21,7 @@ from classes.website import Website
 
 ```
 
-make a list of your movies you like to show. 
+make a list of your movies you like to show. following params you have to submit: title, image and the youtube link. 
 ```
 movies = []
 movie = Movie('Intouchables',
