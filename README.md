@@ -39,6 +39,11 @@ website.generate_html()
 website.open_website()
 ```
 
+start the application. use the app.py or your own file
+```
+pyton app.py 
+```
+
 Feel free to modify the templates for your needs (the website use bootstrap):
 - main_page_content.html contains the body part of the website
 - main_page_head.html conatins the head of the website. 
