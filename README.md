@@ -39,9 +39,9 @@ website.generate_html()
 website.open_website()
 ```
 
-start the application. use the app.py or your own file
+start the application over the terminal. use the app.py or your own file
 ```
-pyton app.py 
+python app.py 
 ```
 
 Feel free to modify the templates for your needs (the website use bootstrap):
