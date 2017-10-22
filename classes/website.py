@@ -60,7 +60,7 @@ class Website:
                 movie_title=movie.title,
                 poster_image_url=movie.poster_image_url,
                 trailer_youtube_id=trailer_youtube_id)
-            return content
+        return content
 
     def generate_html(self):
         """generate the html and save the file"""
